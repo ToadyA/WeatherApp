@@ -40,6 +40,7 @@ public class WeatherAPI {
                System.out.println("Precipitation Probability Max: " + day.getPrecProb() + "%");
                System.out.println("Temperature Max: " + day.getTempMax() + "°F");
                System.out.println("Wind Direction: " + day.getWindDir() + "°");
+               System.out.println("Temperature Min: " + day.getTempMin());
                System.out.println("Date: " + day.getTime());
                System.out.println("Weather Code (whatever that means): " + day.getWeatherCode());
                System.out.println("Precipitation Total: " + day.getPrecSum() + " inches");
