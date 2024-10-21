@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+  <columns>
+    <TableColumn fx:id="windSpeedCol" prefWidth="66.0" text="Wind Spd" />
+    <TableColumn fx:id="precProbCol" prefWidth="67.0" text="Prec Prob" />
+      <TableColumn fx:id="tempMaxCol" prefWidth="67.0" text="Temp Max" />
+      <TableColumn fx:id="windDirCol" prefWidth="66.0" text="Wind Dir" />
+      <TableColumn fx:id="tempMinCol" prefWidth="67.0" text="Temp Min" />
+      <TableColumn fx:id="timeCol" prefWidth="67.0" text="Date Time" />
+      <TableColumn fx:id="weatherCodeCol" prefWidth="66.0" text="W Code" />
+    <TableColumn fx:id="precSumCol" prefWidth="67.0" text="Prec Sum" />
+    <TableColumn fx:id="precHoursCol" prefWidth="67.0" text="Prec Hours" />
+
+  </columns>
+</TableView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="vboxDay1" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed1" />
+            <TextField fx:id="precProb1" />
+            <TextField fx:id="tempMax1" />
+            <TextField fx:id="windDir1" />
+            <TextField fx:id="tempMin1" />
+            <TextField fx:id="time1" />
+            <TextField fx:id="weatherCode1" />
+            <TextField fx:id="precSum1" />
+            <TextField fx:id="precHours1" />
+         </children></VBox>
+      <VBox fx:id="vboxDay2" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed2" />
+            <TextField fx:id="precProb2" />
+            <TextField fx:id="tempMax2" />
+            <TextField fx:id="windDir2" />
+            <TextField fx:id="tempMin2" />
+            <TextField fx:id="time2" />
+            <TextField fx:id="weatherCode2" />
+            <TextField fx:id="precSum2" />
+            <TextField fx:id="precHours2" />
+         </children></VBox>
+      <VBox fx:id="vboxDay3" prefHeight="200.0" prefWidth="81.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed3" />
+            <TextField fx:id="precProb3" />
+            <TextField fx:id="tempMax3" />
+            <TextField fx:id="windDir3" />
+            <TextField fx:id="tempMin3" />
+            <TextField fx:id="time3" />
+            <TextField fx:id="weatherCode3" />
+            <TextField fx:id="precSum3" />
+            <TextField fx:id="precHours3" />
+         </children></VBox>
+      <VBox fx:id="vboxDay4" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed4" />
+            <TextField fx:id="precProb4" />
+            <TextField fx:id="tempMax4" />
+            <TextField fx:id="windDir4" />
+            <TextField fx:id="tempMin4" />
+            <TextField fx:id="time4" />
+            <TextField fx:id="weatherCode4" />
+            <TextField fx:id="precSum4" />
+            <TextField fx:id="precHours4" />
+         </children></VBox>
+      <VBox fx:id="vboxDay5" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed5" />
+            <TextField fx:id="precProb5" />
+            <TextField fx:id="tempMax5" />
+            <TextField fx:id="windDir5" />
+            <TextField fx:id="tempMin5" />
+            <TextField fx:id="time5" />
+            <TextField fx:id="weatherCode5" />
+            <TextField fx:id="precSum5" />
+            <TextField fx:id="precHours5" />
+         </children></VBox>
+      <VBox fx:id="vboxDay6" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed6" />
+            <TextField fx:id="precProb6" />
+            <TextField fx:id="tempMax6" />
+            <TextField fx:id="windDir6" />
+            <TextField fx:id="tempMin6" />
+            <TextField fx:id="time6" />
+            <TextField fx:id="weatherCode6" />
+            <TextField fx:id="precSum6" />
+            <TextField fx:id="precHours6" />
+         </children></VBox>
+      <VBox fx:id="vboxDay7" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="windSpeed7" />
+            <TextField fx:id="precProb7" />
+            <TextField fx:id="tempMax7" />
+            <TextField fx:id="windDir7" />
+            <TextField fx:id="tempMin7" />
+            <TextField fx:id="time7" />
+            <TextField fx:id="weatherCode7" />
+            <TextField fx:id="precSum7" />
+            <TextField fx:id="precHours7" />
+         </children></VBox>
+   </children>
+</HBox>

@@ -1,14 +1,19 @@
-public class WeatherData {
-    private double windSpeed;
-    private int precProb;
-    private double tempMax;
-    private int windDir;
-    private double tempMin;
-    private String time;
-    private int weatherCode;
-    private double precSum;
-    private double precHours;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
+public class WeatherData {
+    private final SimpleDoubleProperty windSpeed;
+    private final SimpleIntegerProperty precProb;
+    private final SimpleDoubleProperty tempMax;
+    private final SimpleIntegerProperty windDir;
+    private final SimpleDoubleProperty tempMin;
+    private final SimpleStringProperty time;
+    private final SimpleIntegerProperty weatherCode;
+    private final SimpleDoubleProperty precSum;
+    private final SimpleDoubleProperty precHours;
+
+    /*
     public WeatherData(){
         this.windSpeed = 0.0;
         this.precProb = 0;
@@ -20,44 +25,80 @@ public class WeatherData {
         this.precSum = 0.0;
         this.precHours = 0.0;
     }
+    */
 
     public WeatherData(double windSpeed, int precProb, double tempMax, int windDir, double tempMin, String time, int weatherCode, double precSum, double precHours){
-        this.windSpeed = windSpeed;
-        this.precProb = precProb;
-        this.tempMax = tempMax;
-        this.windDir = windDir;
-        this.tempMin = tempMin;
-        this.time = time;
-        this.weatherCode = weatherCode;
-        this.precSum = precSum;
-        this.precHours = precHours;
+        this.windSpeed = new SimpleDoubleProperty(windSpeed);
+        this.precProb = new SimpleIntegerProperty(precProb);
+        this.tempMax = new SimpleDoubleProperty(tempMax);
+        this.windDir = new SimpleIntegerProperty(windDir);
+        this.tempMin = new SimpleDoubleProperty(tempMin);
+        this.time = new SimpleStringProperty(time);
+        this.weatherCode = new SimpleIntegerProperty(weatherCode);
+        this.precSum = new SimpleDoubleProperty(precSum);
+        this.precHours = new SimpleDoubleProperty(precHours);
     }
 
     public double getWindSpeed(){
+        return windSpeed.get();
+    }
+    public SimpleDoubleProperty windSpeedProperty(){
         return this.windSpeed;
     }
-    public int getPrecProb(){
+
+    public int getPrecProb() {
+        return precProb.get();
+    }
+    public SimpleIntegerProperty precProbProperty(){
         return this.precProb;
     }
-    public double getTempMax(){
+
+    public double getTempMax() {
+        return tempMax.get();
+    }
+    public SimpleDoubleProperty tempMaxProperty(){
         return this.tempMax;
     }
-    public int getWindDir(){
+
+    public int getWindDir() {
+        return windDir.get();
+    }
+    public SimpleIntegerProperty windDirProperty(){
         return this.windDir;
     }
+
     public double getTempMin(){
+        return tempMin.get();
+    }
+    public SimpleDoubleProperty tempMinProperty(){
         return this.tempMin;
     }
-    public String getTime(){
+
+    public String getTime() {
+        return time.get();
+    }
+    public SimpleStringProperty timeProperty(){
         return this.time;
     }
-    public int getWeatherCode(){
+
+    public int getWeatherCode() {
+        return weatherCode.get();
+    }
+    public SimpleIntegerProperty weatherCodeProperty(){
         return this.weatherCode;
     }
-    public double getPrecSum(){
+
+    public double getPrecSum() {
+        return precSum.get();
+    }
+    public SimpleDoubleProperty precSumProperty(){
         return this.precSum;
     }
-    public double getPrecHours(){
+
+    public double getPrecHours() {
+        return precHours.get();
+    }
+    public SimpleDoubleProperty precHoursProperty(){
         return this.precHours;
     }
 }
