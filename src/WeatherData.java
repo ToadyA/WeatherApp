@@ -8,6 +8,7 @@ public class WeatherData {
     private final SimpleStringProperty tempMin;
     private final SimpleStringProperty time;
     private final SimpleIntegerProperty weatherCode;
+    private final SimpleStringProperty weatherStatus;
 
     public WeatherData(double windSpeed, double tempMax, int windDir, double tempMin, String time, int weatherCode){
         this.windSpeed = new SimpleStringProperty(windSpeed + " mph");
@@ -16,6 +17,7 @@ public class WeatherData {
         this.tempMin = new SimpleStringProperty(tempMin + " °F");
         this.time = new SimpleStringProperty(time);
         this.weatherCode = new SimpleIntegerProperty(weatherCode);
+        this.weatherStatus = new SimpleStringProperty(WeatherImages.getWeatherStatus(weatherCode));
     }
 
     public String getWindSpeed(){
@@ -58,5 +60,12 @@ public class WeatherData {
     }
     public SimpleIntegerProperty weatherCodeProperty(){
         return this.weatherCode;
+    }
+
+    public String getWeatherStatus(){
+        return weatherStatus.get();
+    }
+    public SimpleStringProperty weatherStatusProperty(){
+        return this.weatherStatus;
     }
 }
